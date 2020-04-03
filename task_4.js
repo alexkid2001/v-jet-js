@@ -4,21 +4,7 @@
   const url = 'http://54.39.188.42/';
   let data ='';
   let out = '';
-
-  // Content-Type:application/json; charset=UTF-8
-
-  // fetch(url, {
-  //   method: "GET", // POST, PUT, DELETE, etc.
-  //   headers: {
-  //     // значение этого заголовка обычно ставится автоматически,
-  //     // в зависимости от тела запроса
-  //     "Content-Type": "text/plain;charset=UTF-8"
-  //   },})
-  // .then(resp => {
-  //   console.log(JSON.stringify(resp));
-  //   // console.log(resp.json());
-  // });
-
+  
   function b64DecodeUnicode(str) {
     // Going backwards: from bytestream, to percent-encoding, to original string.
     return decodeURIComponent(atob(str).split('').map(function(c) {
@@ -36,7 +22,6 @@
   console.log(xhr.status);
   
   if (xhr.status != 200) {
-    // обработать ошибку
     alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
     
   } else {
