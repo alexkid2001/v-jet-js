@@ -1,0 +1,15 @@
+.content {
+  padding-top: 50px;
+}
+
+.btn.disabled {
+  pointer-events: none;
+}
+
+p.odd {
+  color: red;
+}
+
+p.even {
+  color: green;
+}

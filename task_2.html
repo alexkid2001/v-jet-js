@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./src/styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./src/styles/task_2.css">
+</head>
+<body>
+  <div class="content">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+          <h1>TASK 2</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <form onsubmit="event.preventDefault();" class="form-inline number-form">
+            <div class="form-group mx-sm-3 mb-2"> 
+              <input type="text" class="form-control number-form__input" placeholder="Enter Number">
+            </div>
+            <button class="btn btn-primary mx-sm-3 mb-2 number-form__set-btn disabled" >Set</button>
+            <button class="btn btn-danger mx-sm-3 mb-2 number-form__clear-btn" >Clear</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="task_2.js"></script>
+</body>
+</html>
